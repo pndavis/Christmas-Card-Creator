@@ -1,5 +1,5 @@
-// CS 401 Fall 2014
-// The Greeting class allows text to be added to a scene.
+
+//Greeting.java
 
 import java.awt.*;
 import java.awt.geom.*;
@@ -34,12 +34,6 @@ class Greeting implements MyText
 		setText(s);
 	}
 	
-	// This method is tricky.  We want the user to be able to select the Greeting object
-	// to edit / move it, etc.  To do this we need a way to find it.  This can be done with
-	// a bounding box, which is actually just a Rectangle2D object.  However, we want the
-	// bounding box to be minimally bigger than the actual text, which cannot be done without
-	// knowledge of the text, font and graphics environment.  This can be done with the
-	// FontMetrics class, as shown below.
 	public void draw(Graphics2D g)
 	{
 		g.setColor(Color.BLACK);
@@ -71,8 +65,6 @@ class Greeting implements MyText
 		return boundingBox.contains(x, y);
 	}
 	
-	// Note that we are adding the text to the end of this object.  This must
-	// be taken into account when a scene is being restored.
 	public String saveData()
 	{
 		return ("Greeting:" + X + ":" + Y + ":" + size + ":" + text);
