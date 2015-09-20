@@ -16,12 +16,10 @@ import java.util.*;
 import java.io.*;
 import java.awt.print.*;
 
-// Create enum types that will be useful in the program
+// Create enum types
 enum Figures {TREE,SNOWFLAKE,GREETING,CABIN,CLOUD,STAR}
 enum Mode {NONE,DRAW,SELECTED,MOVING}
 
-// Code extracted from Oracle Java Example programs.  See link below for full code:
-// http://docs.oracle.com/javase/tutorial/2d/printing/examples/PrintUIWindow.java
 class thePrintPanel implements Printable
 {
 	JPanel panelToPrint;
@@ -73,10 +71,6 @@ public class assig5
 	private JMenuItem delete, resize;
 	private JFrame theWindow;
 
-	// This ArrayList is used to store the shapes in the program.
-	// It is specified to be of type MyShape, so objects of any class
-	// that implements the MyShape interface can be stored in here.
-	// See Section 7.13 in your text for more info on ArrayList.
 	private ArrayList<MyShape> shapeList;
     private ArrayList<MyShape> containsList;
     private int containsIndex;
