@@ -1,3 +1,3 @@
-# Christmas-Card-Creator
+**Christmas Card Creator**
 
-A class project to design your own Christmas card and then export it.
+This is a project I did for cs 401 at Pitt. It is my first (and last) major project using Java's Swing GUI. It is a Christmas card creator, and give the user 6 different shapes to create these cards. They have the ablitity to move, resize, cut, copy, paste, and delete all of these objects however they want. When finsihed, they have the option to print it, or to save it a a jpg. I really enjoyed this project, even though swing is a real pain. Long term I would like to remake this project in another language.
